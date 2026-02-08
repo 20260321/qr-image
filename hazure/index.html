@@ -8,16 +8,26 @@
     html, body {
       margin: 0;
       padding: 0;
+      width: 100%;
+      height: 100%;
       background: black;
     }
+
+    body {
+      display: flex;
+      justify-content: center; /* 横中央 */
+      align-items: center;     /* 縦中央 */
+    }
+
     img {
-      width: 100vw;
-      height: 100vh;
+      max-width: 100%;
+      max-height: 100%;
       object-fit: contain;
     }
   </style>
 </head>
 <body>
-  <img src="hazure.jpg" alt="image">
+  <!-- キャッシュ対策で ?v=1 を付ける -->
+  <img src="./hazure.jpg?v=1" alt="image">
 </body>
 </html>
